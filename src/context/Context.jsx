@@ -5,13 +5,13 @@ export const Context = createContext();
 
 const ContextProvider = (props) => {
     
-    // State variables declaration using useState hook
-    const [input,setInput] = useState(""); //State for user input
-    const [recentPrompt, setRecentPrompt] = useState(""); // Important: State for storing the most recent prompt
-    const[prevPrompts,setPrevPrompts] = useState([]); // State for storing previous prompts
-    const [showResult,setShowResult] = useState(false); // State for controlling result display
-    const [loading,setLoading] = useState(false); //State for controlling loading spinner display
-    const [resultData, setResultData] = useState(""); //State for storing result data
+    
+    const [input,setInput] = useState(""); 
+    const [recentPrompt, setRecentPrompt] = useState(""); 
+    const[prevPrompts,setPrevPrompts] = useState([]); 
+    const [showResult,setShowResult] = useState(false); 
+    const [loading,setLoading] = useState(false);
+    const [resultData, setResultData] = useState(""); 
      
 
     // Function to delay displaying each word in the response
